@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StorySeedlings | Unlock Human Connection Through Story</title>
+  <link rel="icon" href="./assets/logo-symbol.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'story-green': '#059669',
+            'story-light': '#d1fae5',
+            'story-dark': '#064e3b',
+            'story-accent': '#fbbf24'
+          },
+          fontFamily: {
+            'display': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+    .gradient-text {
+      background: linear-gradient(135deg, #059669, #064e3b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .float-animation {
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+    .pulse-glow {
+      animation: pulse-glow 2s infinite;
+    }
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 20px rgba(5, 150, 105, 0.3); }
+      50% { box-shadow: 0 0 40px rgba(5, 150, 105, 0.6); }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-display antialiased">
+  <!-- Navigation -->
+  <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+    <div class="container mx-auto flex items-center justify-between px-6 py-4">
+      <div class="flex items-center space-x-3">
+        <!-- logo swap -->
+        <div class="w-8 h-8">
+          <img src="./assets/logo-symbol.png" alt="StorySeedlings logo" class="w-full h-full object-contain" />
+        </div>
+        <h1 class="text-xl font-bold gradient-text">StorySeedlings</h1>
+      </div>
+      <nav class="hidden md:flex space-x-8 text-sm font-medium">
+        <a href="#solution" class="hover:text-story-green transition-colors">Solution</a>
+        <a href="#impact" class="hover:text-story-green transition-colors">Impact</a>
+        <a href="#engagement" class="hover:text-story-green transition-colors">Services</a>
+        <a href="#hil" class="hover:text-story-green transition-colors">Hil Here</a>
+        <a href="#start" class="bg-story-green text-white px-6 py-2 rounded-full hover:bg-story-dark transition-all transform hover:scale-105">Start Now</a>
+      </nav>
+      <button class="md:hidden text-story-green">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-20 bg-gradient-to-br from-story-light via-white to-story-light relative overflow-hidden">
+    <!-- Animated Blobs -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+      <div class="absolute bg-story-green opacity-10 w-72 h-72 rounded-full blur-3xl animate-[ping_10s_ease-in-out_infinite]" style="top: 10%; left: 15%;"></div>
+      <div class="absolute bg-story-accent opacity-10 w-48 h-48 rounded-full blur-2xl animate-[pulse_12s_ease-in-out_infinite]" style="top: 65%; left: 75%;"></div>
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-story-green/5 to-transparent"></div>
+    <div class="container mx-auto px-6 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="text-center lg:text-left">
+          <div class="inline-flex items-center bg-story-green/10 text-story-green px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <span class="w-2 h-2 bg-story-green rounded-full mr-2 animate-pulse"></span>
+            Used by 10,000+ facilitators worldwide
+          </div>
+          <h1 class="text-5xl lg:text-7xl font-black mb-6 leading-tight">
+            <span class="gradient-text">Unlock Human</span><br>
+            <span class="text-gray-900">Connection</span><br>
+            <span class="text-story-accent">Through Story</span>
+          </h1>
+          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Transform any gathering into an unforgettable experience. StorySeedlings delivers instant creativity, deeper connections, and breakthrough moments in just 10 minutes.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <a href="#start" class="bg-story-green text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-story-dark transition-all transform hover:scale-105 pulse-glow">
+              Get Instant Access
+            </a>
+            <a href="#demo" class="border-2 border-story-green text-story-green px-8 py-4 rounded-full font-semibold text-lg hover:bg-story-green hover:text-white transition-all">
+              Watch Demo
+            </a>
+          </div>
+          <div class="flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-500">
+            <div class="flex items-center"><span class="text-story-accent mr-1">✓</span> No writing experience needed</div>
+            <div class="flex items-center"><span class="text-story-accent mr-1">✓</span> Works anywhere</div>
+            <div class="flex items-center"><span class="text-story-accent mr-1">✓</span> Instant results</div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="bg-white rounded-3xl shadow-2xl p-8 float-animation">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-br from-story-green to-story-dark rounded-full mx-auto mb-4 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg mb-2">Today's Prompt</h3>
+              <!-- randomizer -->
+              <p id="prompt-text" class="text-gray-600 mb-4 italic">"The elevator stopped between floors, and then she heard the singing..."</p>
+              <div class="flex gap-4 justify-center sm:justify-start">
+                <button id="prompt-btn" class="px-4 py-2 bg-story-accent rounded-full font-semibold hover:bg-yellow-400 transition">
+                  Give Me Another Prompt
+                </button>
+              </div>
+              <div class="flex flex-wrap gap-2 justify-center mt-4">
+                <span class="bg-story-light text-story-dark px-3 py-1 rounded-full text-sm">Melody</span>
+                <span class="bg-story-light text-story-dark px-3 py-1 rounded-full text-sm">Mirror</span>
+                <span class="bg-story-light text-story-dark px-3 py-1 rounded-full text-sm">Midnight</span>
+                <span class="bg-story-light text-story-dark px-3 py-1 rounded-full text-sm">Key</span>
+                <span class="bg-story-light text-story-dark px-3 py-1 rounded-full text-sm">Whisper</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- (rest of your sections unchanged…) -->
+  <!-- Social Proof, Problem/Solution, Use Cases, Services, Hil Here, Testimonials, Final CTA, Footer -->
+
+  <!-- Smooth-scroll + Header scroll effect -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 100) header.classList.add('bg-white/95');
+      else header.classList.remove('bg-white/95');
+    });
+  </script>
+
+  <!-- Prompt randomizer -->
+  <script>
+    (() => {
+      const prompts = [
+        "The elevator stopped between floors, and then she heard the singing...",
+        "A child knocks on the door holding a note addressed to you.",
+        "Everything changed the day the clouds turned green.",
+        "She opened the book, but the pages were blank—except for one."
+      ];
+      const btn = document.getElementById('prompt-btn');
+      const txt = document.getElementById('prompt-text');
+      btn.addEventListener('click', () => {
+        const i = Math.floor(Math.random() * prompts.length);
+        txt.innerText = `"${prompts[i]}"`;
+      });
+    })();
+  </script>
+</body>
+</html>
